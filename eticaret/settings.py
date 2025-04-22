@@ -74,8 +74,12 @@ WSGI_APPLICATION = 'eticaret.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'eticaret_db',
+        'USER': 'root',
+        'PASSWORD': '159369',  # MySQL root şifreni buraya yaz
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
